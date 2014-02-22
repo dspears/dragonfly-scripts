@@ -1,45 +1,16 @@
-*.py[cod]
-
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
-
-# Installer logs
-pip-log.txt
-
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
-
-# Translations
-*.mo
-
-# Mr Developer / Eclipse
-.mr.developer.cfg
-.project
-.pydevproject
-.settings/
-
-# IntelliJ
-.idea/
-*.iml
-
-# Ignore Natlink files
-core/
+_aenea_py.txt
+_bringme.py
+_cmdmemory.py
+_firefox.py
+_mouse_grid_py.txt
+_multiedit.py
+_taskbar_py.txt
 _vocola_main.py
-
-# Ignore personal, work and junk files.
-_work.py
-_personal.py
+_winctrl_py.txt
 config.json
-junk.py
+core/
+grid_base.py
+notepad.py
+notepad++.py
+testscript.py
+*.pyc
