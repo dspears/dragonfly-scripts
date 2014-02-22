@@ -1,3 +1,138 @@
+*.py[cod]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer / Eclipse
+.mr.developer.cfg
+.project
+.pydevproject
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Ignore Natlink files
+core/
+_vocola_main.py
+
+# Ignore personal, work and junk files.
+_work.py
+_personal.py
+config.json
+junk.py
+*.py[cod]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer / Eclipse
+.mr.developer.cfg
+.project
+.pydevproject
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Ignore Natlink files
+core/
+_vocola_main.py
+
+# Ignore personal, work and junk files.
+_work.py
+_personal.py
+config.json
+junk.py
+*.py[cod]
+
+# Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+nosetests.xml
+
+# Translations
+*.mo
+
+# Mr Developer / Eclipse
+.mr.developer.cfg
+.project
+.pydevproject
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Ignore Natlink files
+core/
+_vocola_main.py
+
+# Ignore personal, work and junk files.
+_work.py
+_personal.py
+config.json
+junk.py
 _aenea_py.txt
 _bringme.py
 _cmdmemory.py
@@ -13,4 +148,3 @@ grid_base.py
 notepad.py
 notepad++.py
 testscript.py
-*.pyc
