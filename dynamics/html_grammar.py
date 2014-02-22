@@ -288,6 +288,7 @@ rules = MappingRule(
         # Commands and keywords.
         "tag": Text("<>") + Key("left"),
         "tag <element>": Function(start_tag),
+        "open tag <element>": Function(start_tag) + Key("left"),
         "tags <element>": Function(tags),
         "end tag": Text("</>") + Key("left"),
         "end tag <element>": Function(end_tag),
