@@ -1,4 +1,4 @@
-"""A command module for Dragonfly, for controlling eclipse.
+"""A command module for Dragonfly, for controlling notepad++.
 
 -----------------------------------------------------------------------------
 Licensed under the LGPL3.
