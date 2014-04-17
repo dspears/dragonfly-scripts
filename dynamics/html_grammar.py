@@ -301,12 +301,26 @@ rules = MappingRule(
         "(open|left) comment <text>": SCText("<!-- %(text)s"),
         "(close|right) comment": Text(" -->"),
         # Doctypes.
+        "add doctype": Text("<!DOCTYPE html>"),
+        "document type 5": Text("<!DOCTYPE html>"),
         "doctype 5": Text("<!DOCTYPE html>"),
         "doctype 4 [transitional]": Text('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">'),  # @IgnorePep8
         "doctype 4 strict": Text('<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">'),  # @IgnorePep8
         "doctype X [transitional]": Text('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">'),  # @IgnorePep8
         "doctype X strict": Text('<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">'),  # @IgnorePep8
         # if conditions.
+        # Templates
+        "new html page": Text('<!DOCTYPE html>\n<html>\n<head>\n<title>Page Title</title>\n\n</head>\n<body>\n\n</body>\n</html>')+Key("up:2"),
+        "add style": Text('<style type="text/css">\n\n</style>') + Key('up'),
+        "add script": Text('<script>\n\n</script>\n') + Key('up') + Key('up'),
+        "add form": Text('<form method="POST" action="">\n\n</form>\n') + Key('up')+Key('up'),
+        "add input for <text>": Text('<label for="%(text)s">%(text)s</label><input id="%(text)s" name="%(text)s" value="" />\n'),
+        "add textarea for <text>": Text('<label for="%(text)s">%(text)s</label>\n<textarea id="%(text)s" name="%(text)s" rows="5" cols="40">\n</textarea>\n'),
+        "add text input": Text('<input type="text" name="" value="" />\n'),
+        "add textarea": Text('<textarea rows="5" cols="40" name="txtarea"></textarea>\n'),
+        "add submit input": Text('<input type="submit" name="submit" value="Submit" />\n'),
+        "add list": Text('<ul>\n<li></li>\n<li></li>\n<li></li>\n</ul>\n'),
+        "add div": Text('<div>\n\n</div>')+Key("up"),
     },
     extras=[
         IntegerRef("n", 1, 100),

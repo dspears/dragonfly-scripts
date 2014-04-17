@@ -32,6 +32,18 @@ def define_function(text):
     Text("() {").execute()
     Key("left:3").execute()
 
+def add_onclick(text):
+    Text('// Onclick handler for ').execute()
+    lib.format.camel_case_text(text)
+    Text('\nvar ').execute()
+    lib.format.camel_case_text(text)
+    Text(' = getElementById("#').execute()
+    lib.format.camel_case_text(text)
+    Text('");\n').execute()
+    lib.format.camel_case_text(text)
+    Text('.onclick = function() {\n\n}').execute()
+    Key('up').execute()
+    Text('  ').execute()
 
 rules = MappingRule(
     mapping={
@@ -107,6 +119,8 @@ rules = MappingRule(
         "window": Text("window"),
         "undefined": Text("undefined"),
         "JSON": Text("JSON"),
+        # "add onclick handler for <text>": Text('var ')+camel_case_text(%(text)s)+Text(' = getElementById("#%(text)s");\n%(text)s.onclick = function() {\n\n}')+Key('up')+Key('tab'),
+        "add onclick handler for <text>": Function(add_onclick),
     },
     extras=[
         IntegerRef("n", 1, 100),
